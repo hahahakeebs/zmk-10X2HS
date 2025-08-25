@@ -3,7 +3,7 @@
 
 / {
     chosen {
-        zmk,physical-layout = &textwohs_physical_layout;
+        zmk,physical-layout = &tentwohs_physical_layout;
     };
 };
 
