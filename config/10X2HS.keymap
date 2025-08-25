@@ -140,6 +140,66 @@
             bindings = <&kp P>;
             key-positions = <7 8>;
         };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <12 13>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <13 14>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <3 4>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <9 10>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <4 5>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <10 11>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <16 17>;
+        };
+
+        left_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <8 7 0>;
+        };
+
+        right_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <9 10 5>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 6>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <1 7>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 8>;
+        };
     };
 
     keymap {
