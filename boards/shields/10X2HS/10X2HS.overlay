@@ -23,15 +23,15 @@
             , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
             , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
             , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-            , <&xiao_d 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_1 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+            , <&gpio_1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
             ;
     };
 };
