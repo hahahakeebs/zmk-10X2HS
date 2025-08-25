@@ -1,0 +1,10 @@
+file_format: "1"
+id: 10X2HS
+name: 10X2HS
+type: shield
+url: https://github.com/hahahakeebs/10X2HS
+requires:
+  - seeed_xiao_ble
+features:
+  - keys
+  - studio
