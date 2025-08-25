@@ -118,14 +118,38 @@
         mt: mod_tap { tapping-term-ms = <200>; };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <0 1>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <1 2>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <6 7>;
+        };
+
+        p {
+            bindings = <&kp P>;
+            key-positions = <7 8>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp Q  &kp U  &kp G        &kp P          &kp D  &kp C
-&kp A  &kp E  &kp I        &kp N          &kp S  &kp W
-&kp Y  &kp B  &kp L        &kp F          &kp X  &kp Q
+&kp W  &kp F  &kp G        &kp M          &kp L  &kp U
+&kp A  &kp R  &kp S        &kp N          &kp E  &kp I
+&kp C  &kp D  &kp T        &kp H          &kp O  &kp Y
               &kp SPACE    &kp BACKSPACE
             >;
         };
