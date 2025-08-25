@@ -20,6 +20,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: 10x2hs
+    shield: 10X2HS
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: 10x2hs_with_studio
+    artifact-name: 10X2HS_with_studio
