@@ -7,9 +7,9 @@
 
 / {
     behaviors {
-        hml: homerow_mods_left {
+        hml: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_L_MODS";
+            label = "left homerow mods";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -17,7 +17,7 @@
             quick-tap-ms = <190>;
             flavor = "balanced";
             require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 33 34 29 13 12 11 10 32>;
+            hold-trigger-key-positions = <5 9 15 16 17 19 25 26 27 28 33 34 29 11 10 32 3 4>;
         };
 
         hsl: homerow_shift_left {
@@ -77,9 +77,9 @@
             hold-trigger-key-positions = <0 1 2 12 13 14 20 21 22 23 24 31 32 18 19 6 7 8>;
         };
 
-        bksp_del: bksp_del {
+        bksp_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "BKSP_DEL";
+            label = "backspace/delete";
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
@@ -88,7 +88,7 @@
 
         prns: parenthesis {
             compatible = "zmk,behavior-mod-morph";
-            label = "PRNS";
+            label = "parenthesis";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
@@ -97,7 +97,7 @@
 
         bkts: brackets {
             compatible = "zmk,behavior-mod-morph";
-            label = "BKTS";
+            label = "square brackets";
             bindings = <&kp LEFT_BRACKET>, <&kp LS(RIGHT_BRACKET)>;
 
             #binding-cells = <0>;
@@ -106,16 +106,16 @@
 
         brcs: braces {
             compatible = "zmk,behavior-mod-morph";
-            label = "BRCS";
+            label = "curly braces";
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        nglbkt: angle_brackets {
+        nglbkts: angle_brackets {
             compatible = "zmk,behavior-mod-morph";
-            label = "NGLBKT";
+            label = "angle brackets";
             bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
@@ -124,11 +124,21 @@
 
         bd_word: backspace_delete_word {
             compatible = "zmk,behavior-mod-morph";
-            label = "BD_WORD";
+            label = "backspace/delete word";
             bindings = <&bksp_word>, <&del_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bdlt: backspace_delete_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "backspace delete layer tap";
+            bindings = <&mo>, <&bksp_del>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
         };
     };
 
@@ -299,10 +309,10 @@
 
         base {
             bindings = <
-&kp W          &kp F        &kp G          &kp M            &kp L        &kp U
-&hml LCTRL A   &hml LALT R  &hml LGUI S    &hmr LGUI N      &hmr RALT E  &hmr RCTRL I
-&hsl LSHIFT C  &kp D        &kp T          &kp H            &kp O        &hsr RSHIFT Y
-                            &lt 3 SPACE    &lt 2 BACKSPACE
+&kp W          &kp F        &kp G          &kp M        &kp L        &kp U
+&hml LCTRL A   &hml LALT R  &hml LGUI S    &hmr LGUI N  &hmr RALT E  &hmr RCTRL I
+&hsl LSHIFT C  &kp D        &kp T          &kp H        &kp O        &hsr RSHIFT Y
+                            &lt 3 SPACE    &bdlt 0 0
             >;
         };
 
