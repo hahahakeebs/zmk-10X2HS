@@ -125,7 +125,7 @@
         bd_word: backspace_delete_word {
             compatible = "zmk,behavior-mod-morph";
             label = "backspace/delete word";
-            bindings = <&bksp_word>, <&del_word>;
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -148,20 +148,6 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp STAR &kp STAR &kp SPACE>;
             label = "JSDOC";
-        };
-
-        bksp_word: bksp_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE)>;
-            label = "BKSP_WORD";
-        };
-
-        del_word: del_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(DELETE)>;
-            label = "DEL_WORD";
         };
     };
 
