@@ -87,6 +87,15 @@
         };
     };
 
+    macros {
+        jsdoc: jsdoc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp STAR &kp STAR &kp SPACE>;
+            label = "JSDOC";
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
