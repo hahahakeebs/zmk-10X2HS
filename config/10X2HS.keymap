@@ -299,10 +299,19 @@
 
         base {
             bindings = <
-&kp W          &kp F        &kp G          &kp M            &kp L  &kp U
-&hml LCTRL A   &hml LALT R  &hml LGUI S    &kp N            &kp E  &kp I
-&hsl LSHIFT C  &kp D        &kp T          &kp H            &kp O  &kp Y
-                            &lt 2 SPACE    &lt 1 BACKSPACE
+&kp W          &kp F        &kp G          &kp M            &kp L        &kp U
+&hml LCTRL A   &hml LALT R  &hml LGUI S    &hmr LGUI N      &hmr RALT E  &hmr RCTRL I
+&hsl LSHIFT C  &kp D        &kp T          &kp H            &kp O        &hsr RSHIFT Y
+                            &lt 3 SPACE    &lt 2 BACKSPACE
+            >;
+        };
+
+        base_win {
+            bindings = <
+&trans       &trans  &trans          &trans  &trans  &trans
+&hml LGUI A  &trans  &hml LCTRL S    &trans  &trans  &trans
+&trans       &trans  &trans          &trans  &trans  &trans
+                     &trans          &trans
             >;
         };
 
