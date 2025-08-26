@@ -158,56 +158,66 @@
         q {
             bindings = <&kp Q>;
             key-positions = <0 1>;
+            layers = <0 1>;
         };
 
         b {
             bindings = <&kp B>;
             key-positions = <1 2>;
+            layers = <0 1>;
         };
 
         v {
             bindings = <&kp V>;
             key-positions = <6 7>;
+            layers = <1 0>;
         };
 
         p {
             bindings = <&kp P>;
             key-positions = <7 8>;
+            layers = <0 1>;
         };
 
         z {
             bindings = <&kp Z>;
             key-positions = <12 13>;
+            layers = <0 1>;
         };
 
         x {
             bindings = <&kp X>;
             key-positions = <13 14>;
+            layers = <0 1>;
         };
 
         j {
             bindings = <&kp J>;
             key-positions = <3 4>;
+            layers = <0 1>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <9 10>;
+            layers = <0 1>;
         };
 
         period {
-            bindings = <&kp PERIOD>;
+            bindings = <&pd_cln>;
             key-positions = <4 5>;
+            layers = <0 1>;
         };
 
         comma {
-            bindings = <&kp COMMA>;
+            bindings = <&com_scln>;
             key-positions = <10 11>;
         };
 
         slash {
             bindings = <&kp SLASH>;
             key-positions = <16 17>;
+            layers = <0 1>;
         };
 
         left_enter {
@@ -338,6 +348,67 @@
         screenshot_win {
             bindings = <&kp LS(LG(S))>;
             key-positions = <0 7>;
+        };
+
+        force_quit {
+            bindings = <&kp LG(LS(ESCAPE))>;
+            key-positions = <0 1 2>;
+        };
+
+        ctrl_alt_del {
+            bindings = <&kp LC(LA(DELETE))>;
+            key-positions = <0 1 2>;
+            layers = <1>;
+        };
+
+        undo_win {
+            bindings = <&kp LC(Z)>;
+            key-positions = <12 6>;
+            layers = <1>;
+        };
+
+        copy_win {
+            bindings = <&kp LC(C)>;
+            key-positions = <13 7>;
+        };
+
+        paste_win {
+            bindings = <&kp LC(V)>;
+            key-positions = <14 8>;
+        };
+
+        studio_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <12 13 16 17>;
+        };
+
+        decimal {
+            bindings = <&kp PERIOD>;
+            key-positions = <13 14>;
+            layers = <2>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <2 8>;
+            layers = <2>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 14>;
+            layers = <2>;
+        };
+
+        multiply {
+            bindings = <&kp KP_MULTIPLY>;
+            key-positions = <0 6>;
+            layers = <2>;
+        };
+
+        divide {
+            bindings = <&kp KP_DIVIDE>;
+            key-positions = <6 12>;
         };
     };
 
