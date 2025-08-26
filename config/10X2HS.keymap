@@ -288,6 +288,21 @@
             bindings = <&bd_word>;
             key-positions = <3 9>;
         };
+
+        toggle_nav {
+            bindings = <&tog 3>;
+            key-positions = <6 1 8>;
+        };
+
+        toggle_num {
+            bindings = <&tog 2>;
+            key-positions = <6 13 8>;
+        };
+
+        screenshot {
+            bindings = <&kp LG(LS(N5))>;
+            key-positions = <0 7>;
+        };
     };
 
     keymap {
