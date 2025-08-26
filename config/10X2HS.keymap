@@ -420,7 +420,7 @@
             >;
         };
 
-        layer_4 {
+        num_sym_win {
             bindings = <
 &trans              &trans  &trans           &trans  &trans  &trans
 &hml LGUI NUMBER_4  &trans  &hmr LCTRL N6    &trans  &trans  &trans
@@ -445,6 +445,20 @@
 &kp LC(X)  &kp LC(C)  &kp LC(V)    &trans         &trans  &trans
                       &trans       &kp LC(Z)
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        num_sym_win {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        nav_fn_win {
+            if-layers = <1 4>;
+            then-layer = <5>;
         };
     };
 };
