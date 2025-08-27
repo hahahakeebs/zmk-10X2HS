@@ -430,7 +430,7 @@
 
         base {
             bindings = <
-&kp W          &kp F        &kp G          &kp M        &kp L        &kp U
+&kp W          &kp F        &lt 6 G        &kp M        &kp L        &kp U
 &hml LCTRL A   &hml LALT R  &hml LGUI S    &hmr LGUI N  &hmr RALT E  &hmr RCTRL I
 &hsl LSHIFT C  &kp D        &kp T          &kp H        &kp O        &hsr RSHIFT Y
                             &lt 4 SPACE    &bdlt 2 0
@@ -479,6 +479,15 @@
 &trans     &trans     &trans       &hmr LCTRL F4  &trans  &hmr LGUI F6
 &kp LC(X)  &kp LC(C)  &kp LC(V)    &trans         &trans  &trans
                       &trans       &kp LC(Z)
+            >;
+        };
+
+        ble {
+            bindings = <
+&bt BT_PRV  &bt BT_NXT  &trans    &trans  &trans  &trans
+&bt BT_CLR  &trans      &trans    &trans  &trans  &trans
+&trans      &trans      &trans    &trans  &trans  &trans
+                        &trans    &trans
             >;
         };
     };
