@@ -439,9 +439,9 @@
 
         base_win {
             bindings = <
-&trans       &trans  &trans          &trans  &trans  &trans
-&hml LGUI A  &trans  &hml LCTRL S    &trans  &trans  &trans
-&trans       &trans  &trans          &trans  &trans  &trans
+&trans       &trans  &trans          &trans        &trans  &trans
+&hml LGUI A  &trans  &hml LCTRL S    &hmr LCTRL N  &trans  &hmr LGUI I
+&trans       &trans  &trans          &trans        &trans  &trans
                      &trans          &trans
             >;
         };
